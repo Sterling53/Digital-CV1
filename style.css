@@ -159,20 +159,46 @@ small {
 label {
     font-size: 20px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
-    border: 2px solid black;
+
 }
 
 input {
-    border-radius: 120px;
     display: inline-block;
     align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 textarea {
-    display: inline-block;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
 }
+input.submit {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+input.submit:hover {
+    background-color: goldenrod;
+}   
 
 /* Tables */
 table.education {
