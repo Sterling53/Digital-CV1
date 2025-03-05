@@ -249,7 +249,7 @@ body.aboutpage, body.contactpage, body.skillspage, body.educationpage, body.feed
 }
 
 body.aboutpage {
-    background: repeating-linear-gradient(60deg, rgba(0, 0, 0, 0.671), rgb(255, 123, 0));
+    background-color: orange;
     color: purple;
     font-family: 'Courier New', Courier, monospace;
 }
