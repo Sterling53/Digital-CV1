@@ -53,8 +53,9 @@ h1.home {
     text-decoration: underline;
     border: 10px solid black;
     font-family: Sigmar, Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: blur(5px);
+    color: hsl(123, 100%, 49%);
 }
-
 h1.contact, h1.skills {
     border: 5px solid black;
     border-radius: 180px;
@@ -121,7 +122,20 @@ img, img.bub, img.bubfestive, img.purr-c {
     border: 2px solid black;
     border-radius: 10px;
 }
-
+img.selfie {
+    border: 2px solid hsl(123, 100%, 49%);
+    border-radius: 360px; 
+}
+img.family {
+    border: 2px solid hsl(123, 100%, 49%);
+    border-radius: 10px;
+}
+figure.cat {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
 /* Figure Caption */
 figcaption {
     text-align: center;
@@ -132,7 +146,7 @@ figcaption {
 }
 
 /* Paragraphs */
-p.summary, p.educationpara, p.aboutpara {
+p.summary, p.aboutpara {
     font-size: 20px;
     text-align: center;
     margin: 10px;
@@ -205,7 +219,24 @@ input.submit {
 input.submit:hover {
     background-color: goldenrod;
 }   
-
+button.reset {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: darkslategray;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+button.reset:hover {
+    background-color: goldenrod;
+}
 /* Tables */
 table.education {
     font-size: 20px;
@@ -222,6 +253,8 @@ table.education {
 td {
     border: 2px solid black;
     padding: 10px;
+    width: 25%; 
+
 }
 
 th {
@@ -233,60 +266,51 @@ th {
 body.homepage {
     color: hsl(123, 100%, 49%);
     padding: 10px;
-    border: 5px solid transparent;
+    border: 5px solid hsl(123, 100%, 49%);
     background-clip: padding-box;
     position: relative;
     background: black;
     font-family: Chakra Petch, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body.aboutpage, body.contactpage, body.skillspage, body.educationpage, body.feedbackpage {
-    color: black;
-    padding: 20px;
-    border: 50px solid transparent;
-    background-clip: padding-box;
-    position: relative;
-}
-
 body.aboutpage {
-    background-color: orange;
+    background-color: rgb(255, 123, 0);
     color: purple;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 5px solid purple;
 }
 
 body.contactpage {
-    background-color: beige;
-}
-
-body.contactpage::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    border: 50px solid transparent;
-    background-image: url('C:/Users/aaron/Downloads/conifers-daylight-environment-1666021 (1).jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: -1;
-    pointer-events: none;
+    background: repeating-linear-gradient(45deg, rgba(0, 0, 255, 0.671), rgb(0, 0, 0));
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 5px solid black;
+    padding: 10px;
 }
 
 body.skillspage {
-    background: radial-gradient(rgba(0, 0, 0, 0.671), rgb(0, 0, 0));
+    background: black;
     color:white;
     font-family: Smooch Sans, Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    border: 5px solid white;
+    padding: 10px;
 }
 
 body.educationpage {
     background: repeating-linear-gradient(45deg, rgba(0, 255, 85, 0.671), rgb(68, 109, 64));
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    border: 5px solid rgb(68, 109, 64);
 }
 
 body.feedbackpage {
     background: repeating-linear-gradient(45deg, rgba(255, 0, 170, 0.671), rgb(59, 35, 53));
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 5px solid rgb(59, 35, 53);
+    padding: 10px;
 }
