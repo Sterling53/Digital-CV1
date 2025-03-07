@@ -41,7 +41,14 @@ ul.nav-buttons li a:active {
 }
 
 /* Headings */
-h1.home, h1.contact, h1.skills, h1.educationtit, h1.about, h1.feedback {
+header {
+    border: 2px solid hsl(0, 0%, 0%);
+    position:relative;
+    height: 500px;
+    width:auto;
+
+}
+h1.contact, h1.skills, h1.educationtit, h1.about, h1.feedback {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
@@ -55,6 +62,9 @@ h1.home {
     font-family: Sigmar, Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: blur(5px);
     color: hsl(123, 100%, 49%);
+    position:absolute;
+    left: 40%;
+    top: 200px;
 }
 h1.contact, h1.skills {
     border: 5px solid black;
@@ -64,7 +74,15 @@ h1.contact, h1.skills {
 h1.skills {
     border-radius: 180px;
 }
-
+h2.info {position:absolute;
+color: hsl(123, 100%, 49%);
+font-size: 30px;
+justify-content:flex-end;
+align-items: flex-end;}
+nav {
+    border: 2px solid hsl(123, 100%, 49%);
+    position: relative;
+}
 h2.summaryhead, h2.project, h2.contact, h2.about {
     text-align: center;
     font-weight: bold;
@@ -115,7 +133,7 @@ h3 a:hover, h2.contact a:hover {
     color: goldenrod;
 }
 
-/* Images */
+/* Images */z
 img, img.bub, img.bubfestive, img.purr-c {
     display: block;
     margin: 10px auto;
